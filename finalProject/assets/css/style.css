@@ -1,0 +1,183 @@
+img{
+    height:300px;
+    width:300px;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: 50%50%;
+    justify-items: center;
+    align-items: center;
+}
+
+.card-container {
+    top: 150px;
+    height: 150px;
+    perspective: 600;
+    position: relative;
+    /* margin: 0 auto; */
+    width: 100%;
+}
+
+.card {
+    
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.card .back {
+  transform: rotateY(180deg);
+}
+
+/* a[href^="#main-content"]:focus{
+
+} */
+
+.offpage {
+  position:absolute;
+  left:-1000px;
+}
+
+.offpage:focus{
+  position:static;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-bottom: 100px;
+    width: 100%;
+    z-index: 1000; /* ensures it stays on top */
+    background-color: #111; /* or any background to prevent transparency */
+    padding: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.home {
+  background-color: #0B0C10; /* dark navy background */
+  color: #C5C6C7;            /* light gray text */
+  
+}
+
+.home a, .home h1 {
+  color: #45A29E; /* soft teal */
+}
+
+.home a:hover {
+  color: #66FCF1; /* bright cyan hover */
+}
+
+
+.classic-rock {
+  background-color: #D3C2AE; /* rustic beige */
+  color: #3E3B38;            /* charcoal text */
+}
+
+.classic-rock a, .classic-rock h1 {
+  color: #817460; /* earthy mid-tone */
+}
+
+.classic-rock a:hover {
+  color: #6A6761; /* slate gray hover */
+}
+
+.metal{
+    background-color: #0D0D0D;
+    color: #555555;
+
+}
+
+.metal h1, .metal a{
+    color:#282f35;
+}
+
+.metal a:hover {
+  color: #990000; /* dark crimson hover */
+}
+
+.prog {
+  background-color: #F4EFE3;
+  color: #303030;
+}
+
+.prog h1, .prog a {
+  color: #a98d66;
+}
+
+.prog a:hover {
+  color: #7a5f36;
+}
+
+.electronic {
+  background-color: #000000; /* black background */
+  color: #C0C0C0;            /* silver text */
+}
+
+.electronic a, .electronic h1 {
+  color: #D4AF37; /* gold subheadings */
+}
+
+.electronic a:hover {
+  color: #FFFFFF; /* white hover for contrast */
+}
+
+.misc {
+  background-color: #A3C6AA; /* seafoam green background */
+  color: #C87F76;            /* deep warm brown text */
+}
+
+.misc h1, .misc a {
+  color: #EFE1C6; /* muted beige subheadings */
+}
+
+.misc a:hover {
+  color: #FDF9F2; /* soft white on hover */
+}
+
+body{
+    margin-top: 20px;
+    font-size:125%;
+}
+
+header{
+   height: 50px;
+   background-color: thistle;
+   align-content: center;
+   /* position: fixed; */
+}
+
+.grid-container img:hover{
+    border-style: groove;
+    border-color:#434037;
+    border-width:10px;
+}
+
+
+
